@@ -1,13 +1,14 @@
-/* 
-Maak een array met vijf kleuren in het engels erin.
-Zorg ervoor dat de tekst van het <h1> element naar een willekeurige kleur verandert zodra je op de knop klikt.
-*/
 
 const Name = "Laura";
 
 function greetingFunction() {
-    document.getElementById("name").innerHTML = "Hi " + Name + "!";
+  document.getElementById("name").innerHTML = "Hi " + Name + "!";
+
+  let colours = ["blue", "green", "yellow", "orange", "purple"];
+
+  let random = Math.floor(Math.random() * colours.length);
+
+  document.getElementById("name").style.color = colours[random];
   };
 
-var colours = ["blue", "green", "yellow", "orange", "purple"];
 
